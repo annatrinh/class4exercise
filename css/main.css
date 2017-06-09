@@ -1,0 +1,37 @@
+body {
+  text-align: center;
+}
+
+.box {
+  display:inline-block;
+  height: 150px;
+  width: 24%;
+}
+
+.gold {
+  background-color: gold;
+}
+
+.green {
+  background-color: green;
+}
+
+.gray {
+  background-color: gray;
+}
+
+.purple {
+  background-color: purple;
+}
+
+@media (max-width: 600px) {
+  .green, .gray {
+    display: none;
+  }
+}
+
+@media (min-width: 1000px) {
+  .box {
+    width: 100%;
+  } /* if this media query is set to div, the earlier .box specification overrides*/
+}
